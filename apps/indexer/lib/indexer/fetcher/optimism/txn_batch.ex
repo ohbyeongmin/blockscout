@@ -31,7 +31,7 @@ defmodule Indexer.Fetcher.Optimism.TxnBatch do
   @fetcher_name :optimism_txn_batches
 
   # Optimism chain block time is a constant (2 seconds)
-  @op_chain_block_time 2
+  @op_chain_block_time 12
 
   def child_spec(start_link_arguments) do
     spec = %{
